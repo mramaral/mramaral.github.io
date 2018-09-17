@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
     height: 100%;
     background-color: #ccc;
@@ -12,7 +14,7 @@ header {
 }
 header img.foto {
     box-sizing: border-box;
-    width: 20%;
+    width: 22%;
     border: 10px solid #000;
     vertical-align: middle;
     float:left;
@@ -22,13 +24,15 @@ header div.cabecalho {
     border-bottom: 30px solid #000;
     background-color: #33B2FF;
     height: 100%;
-    width: 80%;
+    width: 78%;
     vertical-align: bottom;
     float: left;
     position: relative;
 }
 header div.cabecalho h1{
-    font-size: 3em;
+    font-size: 4em;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
     text-align: center;
     margin-top: 80px;
 }
@@ -63,9 +67,10 @@ header nav ul.menu {
     position: absolute;
     left: 0;
     bottom: 0;
+    font-family: 'Roboto', sans-serif;
 }
 header nav ul.menu li {
-    float: left;
+    display: inline-block;
     padding: 8px 10px;
     border: #000 5px solid;
     border-bottom: 0px;
@@ -83,7 +88,7 @@ header nav ul.social-networks {
     bottom: 0;
 }
 header nav ul.social-networks li {
-    float: left;
+    display: inline-block;
     background-repeat: no-repeat;
     background-position: bottom;
     font-size: 0;
@@ -116,7 +121,7 @@ main {
     border-left: 20px solid #000;
     box-shadow: 0 -10px 0 0 #666 inset;
     position: relative;
-    min-height: 500px;;
+    min-height: 700px;;
     z-index: -1;
 }
 footer {
