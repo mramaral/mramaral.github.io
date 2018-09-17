@@ -1,0 +1,144 @@
+body{
+    height: 100%;
+    background-color: #ccc;
+}
+header {
+    position: relative;
+    width: 100%;
+    clear: both;
+    margin: auto;
+    height: 240px;
+    z-index: 1;
+}
+header img.foto {
+    box-sizing: border-box;
+    width: 20%;
+    border: 10px solid #000;
+    vertical-align: middle;
+    float:left;
+    z-index: 2;
+}
+header div.cabecalho {
+    border-bottom: 30px solid #000;
+    background-color: #33B2FF;
+    height: 100%;
+    width: 80%;
+    vertical-align: bottom;
+    float: left;
+    position: relative;
+}
+header div.cabecalho h1{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 80px;
+}
+header div.cabecalho ul.lingua {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+header div.cabecalho ul.lingua a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+}
+header div.cabecalho ul.lingua a:hover{
+    text-decoration: underline;
+}
+header div.cabecalho ul.lingua a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+header div.cabecalho ul.lingua li{
+    float: left;
+    color: #fff;
+    padding: 2px;
+}
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul.menu {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header nav ul.menu li {
+    float: left;
+    padding: 8px 10px;
+    border: #000 5px solid;
+    border-bottom: 0px;
+    margin-right: 1px;
+    background-color: #000;
+    color: #fff;
+}
+header nav ul.menu li:hover {
+    background-color: #fff;
+    color: #000;
+}
+header nav ul.social-networks {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+header nav ul.social-networks li {
+    float: left;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-size: 0;
+}
+header nav ul.social-networks li.github {
+    background-image: url(../images/social-network/GitHub_Logo.png);
+    background-size: 100px 41px;
+    height: 68px;
+    width: 100px;
+}
+header nav ul.social-networks li.linkedin {
+    background-image: url(../images/social-network/LinkedIn_Logo.png);
+    background-size: 170px 41px;
+    height: 68px;
+    width: 170px;
+}
+header nav ul.social-networks li.blog {
+    background-image: url(../images/social-network/Wordpress_Logo.png);
+    background-size: 200px 68px;
+    height: 68px;
+    width: 200px;
+}
+main {
+    clear: both;
+    background-color: #fff;
+    padding-right: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-left: 20px solid #000;
+    box-shadow: 0 -10px 0 0 #666 inset;
+    position: relative;
+    min-height: 500px;;
+    z-index: -1;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    min-height: 60px;;
+    z-index: 0;
+}
+footer div.copyright{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+}
+main div.underconstruction {
+    width: 100%;
+    text-align: center;
+}
+main div.underconstruction h1 {
+    font-size: 3em;
+}

@@ -1,0 +1,37 @@
+div#body-title img {
+    max-height: 30px;
+}
+
+div#body {
+    text-align: center;
+}
+
+table#contact-form {
+    margin: auto
+}
+
+table#contact-form caption {
+    font-family: sans-serif;
+    font-size: 18pt;
+}
+
+table#contact-form p {
+    color: #707070;
+}
+
+table#contact-form span {
+    color: #ff0000;
+}
+
+input#send {
+    background-color: #aaaaaa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input#send:hover {
+    background-color: #808080;
+}
