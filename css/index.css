@@ -1,0 +1,4 @@
+main article p::first-letter {
+    font-size: 2em;
+    float: left;
+}

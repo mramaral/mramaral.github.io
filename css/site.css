@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 body{
     height: 100%;
     background-color: #ccc;
+    min-width: 1260px;
+    min-height: 100%;
 }
 header {
     position: relative;
+    box-sizing: border-box;
     width: 100%;
+    height: 25vh;
     clear: both;
     margin: auto;
-    height: 240px;
     z-index: 1;
 }
 header img.foto {
@@ -112,6 +117,7 @@ header nav ul.social-networks li.blog {
     width: 200px;
 }
 main {
+    box-sizing: border-box;
     clear: both;
     background-color: #fff;
     padding-right: 50px;
@@ -120,9 +126,18 @@ main {
     padding-bottom: 15px;
     border-left: 20px solid #000;
     box-shadow: 0 -10px 0 0 #666 inset;
-    position: relative;
-    min-height: 700px;;
+    min-height: 60vh;
     z-index: -1;
+}
+main h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    padding: 5px;
+}
+main article {
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
 }
 footer {
     background-color: #000;
@@ -130,11 +145,12 @@ footer {
     width: 100%;
     position: relative;
     margin: 0;
-    min-height: 60px;;
+    min-height: 10vh;
     z-index: 0;
 }
 footer div.copyright{
     position: absolute;
+    box-sizing: border-box;
     left: 0;
     right: 0;
     bottom: 10px;

@@ -1,0 +1,19 @@
+main article ul li {
+    clear: both;
+    box-shadow: 1px 1px 6px 0px #000;
+    margin: 15px 0px 10px;
+    padding: 10px;
+}
+div.experience {
+    position: relative;
+}
+main article ul li img{
+    height: 250px;
+    margin: 20px;
+}
+main article ul img.right{
+   float: right;
+}
+main article ul img.left{
+    float: left;
+}
