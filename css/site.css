@@ -45,6 +45,7 @@ header div.cabecalho ul.lingua {
     position: absolute;
     right: 10px;
     top: 10px;
+    display: none;
 }
 header div.cabecalho ul.lingua a{
     text-decoration: none;
