@@ -1,0 +1,12 @@
+main article ul li {
+    clear: both;
+    box-shadow: 1px 1px 6px 0px #000;
+    margin: 15px 0px 10px;
+    padding: 10px;
+}
+
+main article ul img {
+    height: 100px;
+    padding: 20px;
+    float: left;
+}
