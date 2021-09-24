@@ -1,48 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lan="pt" dir="ltr">
     <head>
+        <meta charset="utf-8">
         <title>Matheus Rodrigues do Amaral</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/site.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <img class="foto" src="images/profile.jpeg">
-            <div class="cabecalho">
-            <h1>Matheus Rodrigues do Amaral</h1>
-            <nav>
-            <ul class="menu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="experience.html"><li>Experience</li></a>
-                <a href="expertise.html"><li>Expertise</li></a>
-                <a href="portfolio.html"><li>Portfolio</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-            <ul class="social-networks">
-                <a href="https://www.linkedin.com/in/amaralmr" target="_blank"><li class="linkedin">Linkedin</li></a>
-                <a href="https://github.com/mramaral"><li class="github">Github</li></a>
-                <a href="http://mondrongo.com/"><li class="blog">Blog</li></a>
-            </ul>
-            </nav>
-            <ul class="lingua">
-                <li><a href="pt/index.html">Pt</a></li>
-                <li><a href="es/index.html">Es</a></li>
-            </ul>
+        <div class="wrapper">
+            <div class="title">O site ainda está em construção mas você pode deixar o seu e-mail abaixo para ser avisado do lançamento.</div>
+            <form action="#" class="form">
+                <div class="email-field">
+                    <input type="email" placeholder="nome@TLD.SLD">
+                    <button>Assinar</button>
+                </div>
+            </form>
+            <div class="count-down">
+                <div class="timer dia">
+                    <div class="count">
+                        <div class="numb">00</div>
+                        <div class="text">Dias</div>
+                    </div>
+                </div>
+                <div class="clone">:</div>
+                <div class="timer hora">
+                    <div class="count">
+                        <div class="numb">00</div>
+                        <div class="text">Horas</div>
+                    </div>
+                </div>
+                <div class="clone">:</div>
+                <div class="timer min">
+                    <div class="count">
+                        <div class="numb">00</div>
+                        <div class="text">Minutos</div>
+                    </div>
+                </div>
+                <div class="clone">:</div>
+                <div class="timer seg">
+                    <div class="count">
+                        <div class="numb">00</div>
+                        <div class="text">Segundos</div>
+                    </div>
+                </div>
             </div>
-        </header>
-        <main>
-            <h2>Welcome!</h2>
-            <article>
-                <p>Hello this is my website and my online portfolio, it was fully developed by me using html5 and css3, feel free to explore and know me better. You can click on brazilian flag at the top for brazilian version.</p><br>
-                <p>Currently I'm a mecanical engeer student at the Federal University from Rio de Janeiro (UFRJ) have participated in formula SAE projects through years 2014, 2015 and 2016 at Buffalo Team (2014 - UFF) and Icarus Team (2015 to 2016 - UFRJ) developing my skills with methrology, tooling, teamwork, solidworks and projects managing. In 2014 I've worked on an engine admission system learning and using Ricardo Wave software, on year 2015 my work was focused on the development of a suspension system learning and using Adams Car software, witch I kept using during 2016 with a steering system development, besides this i've developed a smart steering wheel using raspberry pi, arduino, 3d printing and lasercut. Beyond this I also had an "extra class" about C++ programing and Databases.</p><br>
-                <p>During 2015 I've worked as administrative assistant at OPME sector on Amil Saúde (United Health Group member) basically receiving requests about cirurgical equipament from hospitals via email (outlook) and phone and using the internal system and excel sheets to manage the processes and make the flow more efficient. Also have been working as Uber driver since 2017 developing some social and driving skills. </p>
-            </article>
-        </main>
-        <footer>
-            <div class="copyright">&copy; Matheus Rodrigues do Amaral | 2018<br>All rights reserved</div>
-        </footer>
+        </div>
+    <script>
+        const dia = document.querySelector(".dia .numb");
+        const hora = document.querySelector(".hora .numb");
+        const min = document.querySelector(".min .numb");
+        const seg = document.querySelector(".seg .numb");
+        var timer = setInterval(()=>{
+            var currentDate = new Date().getTime();
+            var launchDate = new Date('Sep 18, 2022 13:00:00').getTime();
+            var duration = launchDate - currentDate;
+            var days = Math.floor(duration / (1000*60*60*24));
+            var hours = Math.floor((duration % (1000*60*60*24)) / (1000*60*60));
+            var minutes = Math.floor((duration % (1000*60*60)) / (1000*60));
+            var seconds = Math.floor((duration % (1000*60)) / (1000));
+            dia.innerHTML = days;
+            hora.innerHTML = hours;
+            min.innerHTML = minutes;
+            seg.innerHTML = seconds;
+            if(days <10){
+                dia.innerHTML = '0' + days;
+            }
+            if(hours <10){
+                hora.innerHTML = '0' + days;
+            }
+            if(minutes <10){
+                min.innerHTML = '0' + days;
+            }
+            if(seconds <10){
+                seg.innerHTML = '0' + days;
+            }
+            if(duration < 0){
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
     </body>
 </html>
