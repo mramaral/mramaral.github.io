@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: 'ScheherazadeNew';
+  src: url('../fonts/ScheherazadeNew-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'GemunuLibre';
+  src: url('../fonts/GemunuLibre.ttf');
+}
 *{
   margin: 0;
   padding: 0;
@@ -15,21 +31,35 @@ html,body{
     background-position: center;
 }
 .wrapper{
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.8);
     color: #000;
     max-width: 900px;
     text-align: center;
-    padding: 0 50px;
+    padding: 30px 50px;
 }
 .wrapper .title{
     font-size: 35px;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper .subtitle{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'ScheherazadeNew', sans-serif;
+}
+.wrapper hr{
+    border-top: 2px solid #db830f;
+    border-bottom: 4px solid #101010;
+}
+.wrapper .message{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
 }
 .wrapper .title span{
     font-weight: 700;
 }
 .wrapper form{
-    margin: 50px 0;
+    margin: 10px 0;
 }
 form .email-field{
     height: 50px;
@@ -51,73 +81,14 @@ form .email-field button{
     height: 100%;
     border: none;
     outline: none;
-    background: #FC4782;
+    background: #000;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'GemunuLibre', sans-serif;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 form .email-field button:hover{
-    background: #000;
-}
-.wrapper .count-down{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    grid-row-end: 100px
-}
-.wrapper .count-down .timer{
-    height: 100%;
-    width: 100px;
-    border: 2px solid;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.count-down .timer .numb{
-    font-size: 25px;
-    font-weight: 500;
-}
-.count-down .timer .text{
-    font-size: 15px;
-}
-.count-down .clone{
-    font-size: 45px;
-}
-@media (max-width: 630px){
-    .wrapper .count-down{
-        height: 80px;
-    }
-    .wrapper .count-down .timer{
-        width: 80px;
-    }
-    .count-down .timer .numb{
-        font-size: 20px;
-    }
-    .count-down .timer .text{
-        font-size: 13px;
-    }
-    .count-down .clone{
-        font-size: 40px;
-    }
-}
-@media (max-width: 542px){
-    .wrapper{
-        padding: 0 20px;
-    }
-    .wrapper .count-down .timer{
-        border: none;
-    }
-    .count-down .timer .numb{
-        font-size: 28px;
-    }
-    .count-down .timer .text{
-        font-size: 15px;
-    }
-    .count-down .clone{
-        display: none;
-    }
+    background: #db830f;
 }

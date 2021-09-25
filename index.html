@@ -10,76 +10,16 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="title">O site ainda está em construção mas você pode deixar o seu e-mail abaixo para ser avisado do lançamento.</div>
+            <div class="title">Matheus Rodrigues do Amaral</div>
+            <div class="subtitle">Graduando em Engenharia Mecânica</div>
+            <hr class="dividerLine">
+            <div class="message">O site ainda está em construção mas você pode deixar o seu e-mail abaixo para ser avisado do lançamento.</div>
             <form action="#" class="form">
                 <div class="email-field">
                     <input type="email" placeholder="nome@TLD.SLD">
-                    <button>Assinar</button>
+                    <button>Enviar</button>
                 </div>
             </form>
-            <div class="count-down">
-                <div class="timer dia">
-                    <div class="count">
-                        <div class="numb">00</div>
-                        <div class="text">Dias</div>
-                    </div>
-                </div>
-                <div class="clone">:</div>
-                <div class="timer hora">
-                    <div class="count">
-                        <div class="numb">00</div>
-                        <div class="text">Horas</div>
-                    </div>
-                </div>
-                <div class="clone">:</div>
-                <div class="timer min">
-                    <div class="count">
-                        <div class="numb">00</div>
-                        <div class="text">Minutos</div>
-                    </div>
-                </div>
-                <div class="clone">:</div>
-                <div class="timer seg">
-                    <div class="count">
-                        <div class="numb">00</div>
-                        <div class="text">Segundos</div>
-                    </div>
-                </div>
-            </div>
         </div>
-    <script>
-        const dia = document.querySelector(".dia .numb");
-        const hora = document.querySelector(".hora .numb");
-        const min = document.querySelector(".min .numb");
-        const seg = document.querySelector(".seg .numb");
-        var timer = setInterval(()=>{
-            var currentDate = new Date().getTime();
-            var launchDate = new Date('Sep 18, 2022 13:00:00').getTime();
-            var duration = launchDate - currentDate;
-            var days = Math.floor(duration / (1000*60*60*24));
-            var hours = Math.floor((duration % (1000*60*60*24)) / (1000*60*60));
-            var minutes = Math.floor((duration % (1000*60*60)) / (1000*60));
-            var seconds = Math.floor((duration % (1000*60)) / (1000));
-            dia.innerHTML = days;
-            hora.innerHTML = hours;
-            min.innerHTML = minutes;
-            seg.innerHTML = seconds;
-            if(days <10){
-                dia.innerHTML = '0' + days;
-            }
-            if(hours <10){
-                hora.innerHTML = '0' + days;
-            }
-            if(minutes <10){
-                min.innerHTML = '0' + days;
-            }
-            if(seconds <10){
-                seg.innerHTML = '0' + days;
-            }
-            if(duration < 0){
-                clearInterval(timer);
-            }
-        }, 1000);
-    </script>
     </body>
 </html>
